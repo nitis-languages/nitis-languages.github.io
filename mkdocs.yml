@@ -6,7 +6,7 @@ site_description: >-
   Documentation all about NLR
 
 # Repository info
-repo_url: https://github.com/nitis-languages/.github/
+repo_url: https://github.com/nitis-languages/nitis-languages.github.io/
 repo_name: nitis-languages/docs
 
 edit_uri_template: blob/site/docs/{path}?plain=1
@@ -17,6 +17,7 @@ copyright: Copyright &copy; 2024 NiTiS-Dev
 theme:
   name: material
   logo: assets/logo.png
+  custom_dir: overrides
   favicon: assets/favicon.png
   icon:
     alternate: material/translate-variant
@@ -52,6 +53,8 @@ theme:
     - content.action.edit
     - content.action.view
     - content.tooltips
+    - navigation.top
+    - navigation.footer
 
 plugins:
   - search
@@ -81,9 +84,14 @@ markdown_extensions:
       auto_append:
         - includes/abbreviations.md
   - pymdownx.superfences
+  - toc:
+      permalink: true
 
 nav:
   - index.md
+  - NiteCode:
+    - Versions:
+      - nitecode/versions/v0.md
 
 extra_javascript:
   - scripts/feedback.js
@@ -91,6 +99,7 @@ extra_javascript:
 
 
 extra:
+  generator: false
   consent:
     title: Cookie consent
     description: >
