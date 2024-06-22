@@ -9,6 +9,8 @@ site_description: >-
 repo_url: https://github.com/nitis-languages/.github/
 repo_name: nitis-languages/docs
 
+edit_uri_template: blob/main/docs/{path}?plain=1
+
 # Copyright
 copyright: Copyright &copy; 2024 NiTiS-Dev
 
