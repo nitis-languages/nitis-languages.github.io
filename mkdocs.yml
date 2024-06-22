@@ -1,0 +1,130 @@
+# Site info
+site_name: NLR::docs
+site_url: https://nitis-languages.github.io/
+site_author: NiTiS-Dev
+site_description: >-
+  Documentation all about NLR
+
+# Repository info
+repo_url: https://github.com/nitis-languages/.github/
+repo_name: nitis-languages/docs
+
+# Copyright
+copyright: Copyright &copy; 2024 NiTiS-Dev
+
+theme:
+  name: material
+  logo: assets/logo.png
+  favicon: assets/favicon.png
+  icon:
+    alternate: material/translate-variant
+    repo: material/github
+    previous: fontawesome/solid/angle-left
+    next: fontawesome/solid/angle-right
+  palette: 
+    - media: "(prefers-color-scheme)"
+      toggle:
+        icon: material/link
+        name: Switch to light mode
+    - media: "(prefers-color-scheme: light)"
+      scheme: default
+      primary: indigo
+      accent: indigo
+      toggle:
+        icon: material/toggle-switch
+        name: Switch to dark mode
+    - media: "(prefers-color-scheme: dark)"
+      scheme: slate
+      primary: black
+      accent: indigo
+      toggle:
+        icon: material/toggle-switch-off
+        name: Switch to system preference
+  features:
+    - search.suggest
+    - search.highlight
+    - search.share
+    - content.code.copy
+    - content.code.select
+    - content.code.annotate
+    - content.action.edit
+    - content.action.view
+    - content.tooltips
+
+plugins:
+  - search
+
+watch:
+  - includes
+
+markdown_extensions:
+  - abbr
+  - admonition
+  - attr_list
+  - md_in_html
+  - pymdownx.tabbed:
+      alternate_style: true
+  - pymdownx.highlight:
+      anchor_linenums: true
+      line_spans: __span
+      pygments_lang_class: true
+  - pymdownx.emoji:
+      emoji_index: !!python/name:material.extensions.emoji.twemoji
+      emoji_generator: !!python/name:material.extensions.emoji.to_svg
+  - pymdownx.tasklist:
+      custom_checkbox: true
+  - pymdownx.inlinehilite
+  - pymdownx.details
+  - pymdownx.snippets:
+      auto_append:
+        - includes/abbreviations.md
+  - pymdownx.superfences
+
+nav:
+  - index.md
+
+extra_javascript:
+  - scripts/feedback.js
+
+
+
+extra:
+  consent:
+    title: Cookie consent
+    description: >
+      We use cookies to recognize your repeated visits and preferences, as well
+      as to measure the effectiveness of our documentation and whether users
+      find what they're searching for. With your consent, you're helping us to
+      make our documentation better.
+    cookies:
+      analytics: Google Analytics
+
+  social:
+    - icon: material/github
+      link: https://github.com/nitis-languages
+
+
+  # alternate:
+  #   - name: English
+  #     link: /
+  #     lang: en
+  #   - name: Russian
+  #     link: /ru/
+  #     lang: ru
+  analytics:
+    provider: google
+    property: !ENV GOOGLE_ANALYTICS_KEY
+    feedback:
+      title: Was this page helpful?
+      ratings:
+        - icon: material/emoticon-happy-outline
+          name: This page was helpful
+          data: 1
+          note: >-
+            Thanks for your feedback!
+        - icon: material/emoticon-sad-outline
+          name: This page could be improved
+          data: 0
+          note: >- 
+            Thanks for your feedback! Help us improve this page by
+            using our <a href="https://forms.gle/tjeWpdtSDRXyR4dG8" target="_blank" rel="noopener">feedback form</a>.
