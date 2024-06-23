@@ -18,7 +18,7 @@ theme:
   name: material
   logo: assets/logo.png
   custom_dir: overrides
-  favicon: assets/favicon.png
+  favicon: assets/favicon.ico
   icon:
     alternate: material/translate-variant
     repo: material/github
