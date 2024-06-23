@@ -58,6 +58,9 @@ theme:
 
 plugins:
   - search
+  - social:
+      cards_layout_options:
+        background_color: "#242048" # The same colour as in the logo
 
 watch:
   - includes

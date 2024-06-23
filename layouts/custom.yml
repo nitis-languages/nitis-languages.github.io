@@ -1,0 +1,41 @@
+definitions:
+
+  - &page_title_with_site_name >-
+    {%- if not page.is_homepage -%}
+      {{ page.meta.get("title", page.title) }} - {{ config.site_name }}
+    {%- else -%}
+      {{ page.meta.get("title", page.title) }}
+    {%- endif -%}
+
+  - &page_description >-
+    {{ page.meta.get("description", config.site_description) or "" }}
+
+layers:
+  - background:
+      color: "#4051b5"
+  - size: { width: 2400, height: 2400 }
+    offset: { x: -1024, y: 64 }
+    icon:
+      value: material/circle
+      color: "#5c6bc0"
+  - size: { width: 1800, height: 1800 }
+    offset: { x: 512, y: -1024 }
+    icon:
+      value: material/circle
+      color: "#3949ab"
+
+tags:
+
+  og:type: website
+  og:title: *page_title_with_site_name
+  og:description: *page_description
+  og:image: "{{ image.url }}" 
+  og:image:type: "{{ image.type }}"
+  og:image:width: "{{ image.width }}"
+  og:image:height: "{{ image.height }}"
+  og:url: "{{ page.canonical_url }}"
+
+  twitter:card: summary_large_image
+  twitter:title: *page_title_with_site_name
+  twitter:description: *page_description
+  twitter:image: "{{ image.url }}"
