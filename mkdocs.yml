@@ -99,10 +99,9 @@ nav:
     - Bytecode:
       - runtime/bytecode/nope.md
       - runtime/bytecode/break.md
-      - runtime/bytecode/load_arg.md
-      - runtime/bytecode/ret.md
-      - runtime/bytecode/pop.md
       - runtime/bytecode/push.md
+      - runtime/bytecode/pop.md
+      - runtime/bytecode/ret.md
       - runtime/bytecode/add.md
       - runtime/bytecode/sub.md
       - runtime/bytecode/mul.md

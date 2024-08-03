@@ -1,4 +1,4 @@
-# Naming guidelines
+# Installation
 
 !!! warning
 
