@@ -1,14 +1,6 @@
 # `push` instructions
 Push instructions are pushing values onto stack for future using
 
-Property|Value
----|---
-Alias|`push`
-Description|Push local variable value onto stack
-Code|`0x03`
-Usage|`push <index: u16>`<br/>`push <name>`
-Size|3
-
 ## Push argument
 
 Property|Value
@@ -19,13 +11,24 @@ Code|`0x02`
 Usage|`push arg <index: u16>`<br/>`push arg <name: literal>`
 Size|3
 
+## Push local
+Property|Value
+---|---
+Alias|`push`
+Description|Push local variable value onto stack
+Code|`0x03`
+Usage|`push <index: u16>`<br/>`push <name>`
+Size|3
+
+
+
 ## Push literals
 
 === "i8"
 
 	Property|Value
 	---|---
-	Alias|`push i8`
+	Alias|`push`
 	Description|Push 8-bit integer onto stack
 	Code|`0x20`
 	Usage|`push i8 <value: i8>`
@@ -105,7 +108,7 @@ Size|3
 
 	Property|Value
 	---|---
-	Alias|`push f32`
+	Alias|`push`
 	Description|Push float integer onto stack
 	Code|`0x2B`
 	Usage|`push <value: f32>`
@@ -115,7 +118,7 @@ Size|3
 
 	Property|Value
 	---|---
-	Alias|`push f64`
+	Alias|`push`
 	Description|Push double float integer onto stack
 	Code|`0x2C`
 	Usage|`push <value: f64>`

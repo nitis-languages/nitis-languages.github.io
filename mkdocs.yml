@@ -3,7 +3,8 @@ site_name: NLR::docs
 site_url: https://nitis-languages.github.io/
 site_author: NiTiS-Dev
 site_description: >-
-  Documentation all about NLR
+  Documentation all about NLR.
+  NiTiS Languages' Runtime manages the execution of NiTiS programs
 
 # Repository info
 repo_url: https://github.com/nitis-languages/nitis-languages.github.io/
@@ -92,10 +93,9 @@ markdown_extensions:
 
 nav:
   - index.md
-  - NiteCode:
-    - Versions:
-      - nitecode/versions/v0.md
+  - install.md
   - Runtime:
+    - runtime/versions/zero.md
     - Bytecode:
       - runtime/bytecode/nope.md
       - runtime/bytecode/break.md
@@ -110,6 +110,8 @@ nav:
       - runtime/bytecode/xor.md
       - runtime/bytecode/and.md
       - runtime/bytecode/or.md
+  - Guidelines:
+    - guidelines/naming-guideline.md
 
 extra_javascript:
   - scripts/feedback.js

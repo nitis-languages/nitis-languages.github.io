@@ -2,9 +2,7 @@
 Does nothing
 
 Property|Value
----|---
-Alias|`nope`
-Description|Does nothing
+--:|---
 Code|`0x00`
-Usage|`nope`
+Assembly|`nope`
 Size|1

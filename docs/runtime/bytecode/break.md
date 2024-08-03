@@ -1,9 +1,8 @@
 # `break` instruction
-Signals the runtime to inform debugger that a break point is been reached
+Signals the NLR to inform debugger that a break point is been reached
 
 Property|Value
----|---
-Alias|`push`
+--:|---
 Code|`0x01`
-Usage|`break`
+Assembly|`break`
 Size|1
