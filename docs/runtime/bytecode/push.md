@@ -61,8 +61,8 @@ Size|3
 	Property|Value
 	--:|---
 	Code|`0x25`
-	Description|Push 8-bit unsigned integer onto stack
 	Assembly|`push <value: u8>`
+	Description|Push 8-bit unsigned integer onto stack
 	Size|2
 
 === "u16"

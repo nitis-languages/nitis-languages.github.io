@@ -96,20 +96,7 @@ nav:
   - install.md
   - Runtime:
     - runtime/versions/zero.md
-    - Bytecode:
-      - runtime/bytecode/nope.md
-      - runtime/bytecode/break.md
-      - runtime/bytecode/push.md
-      - runtime/bytecode/pop.md
-      - runtime/bytecode/ret.md
-      - runtime/bytecode/add.md
-      - runtime/bytecode/sub.md
-      - runtime/bytecode/mul.md
-      - runtime/bytecode/div.md
-      - runtime/bytecode/mod.md
-      - runtime/bytecode/xor.md
-      - runtime/bytecode/and.md
-      - runtime/bytecode/or.md
+    - runtime/list_of_all_bytecodes.md
   - Guidelines:
     - guidelines/naming-guideline.md
 
