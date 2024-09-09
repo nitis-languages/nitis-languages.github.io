@@ -18,8 +18,8 @@ copyright: Copyright &copy; 2024 NiTiS-Dev
 theme:
   name: material
   logo: assets/logo.png
-  custom_dir: overrides
   favicon: assets/favicon.ico
+  custom_dir: overrides
   icon:
     alternate: material/translate-variant
     repo: material/github
@@ -45,33 +45,39 @@ theme:
         icon: material/toggle-switch-off
         name: Switch to system preference
   features:
-    - search.suggest
-    - search.highlight
-    - search.share
-    - content.code.copy
-    - content.code.select
-    - content.code.annotate
-    - content.action.edit
-    - content.action.view
-    - content.tooltips
-    - navigation.top
-    - navigation.footer
+    - search.suggest # Suggestion while search
+    - search.highlight # Highlight search phrase 
+    - search.share # Share search result
+    - content.code.copy # Copy button at edge of code block
+    - content.action.edit # Edit button on begin of page
+    - content.action.view # View button on begin of page
+    - navigation.sections # More prettier view of pages; Off this to enable tree view
+    - navigation.tabs # Root pages are tabs now
+    - navigation.top # Back to top button
+    - navigation.instant # Use XHR to prevent page reload
+    - navigation.instant.progress # Shows progress of instant loading?
+    - navigation.tracking # Dynamically update link during page reading
+    - toc.follow # Toc following
 
 plugins:
-  - search
-  - social:
+  - search # Search bar
+  - minify:
+      minify_html: true # Makes html human-readable
+  - social: # Social card (for Discord, Twitter, etc.)
       cards_layout_options:
-        background_color: "#242048" # The same colour as in the logo
+        background_color: "#242048" # The same color as in the logo
 
-watch:
+watch: # Directories, that need to included
   - includes
 
 markdown_extensions:
-  - abbr
-  - admonition
-  - attr_list
-  - md_in_html
-  - pymdownx.tabbed:
+  - abbr # Abbreviation support
+  - admonition # Admonitions
+  - attr_list # Append attributes in markdown
+  - md_in_html # Use tables, etc.
+  - toc: # Table of content on right
+      permalink: true
+  - pymdownx.tabbed: # Tabs, that you can switch
       alternate_style: true
   - pymdownx.highlight:
       anchor_linenums: true
@@ -88,25 +94,13 @@ markdown_extensions:
       auto_append:
         - includes/abbreviations.md
   - pymdownx.superfences
-  - toc:
-      permalink: true
-
-nav:
-  - index.md
-  - install.md
-  - Runtime:
-    - runtime/versions/zero.md
-    - runtime/list_of_all_bytecodes.md
-  - Guidelines:
-    - guidelines/naming-guideline.md
 
 extra_javascript:
-  - scripts/feedback.js
-
-
+  - /scripts/feedback.js
+  - https://unpkg.com/tablesort@5.3.0/dist/tablesort.min.js
+  - /scripts/tablesort.js
 
 extra:
-  generator: false
   consent:
     title: Cookie consent
     description: >
@@ -120,15 +114,6 @@ extra:
   social:
     - icon: material/github
       link: https://github.com/nitis-languages
-
-
-  # alternate:
-  #   - name: English
-  #     link: /
-  #     lang: en
-  #   - name: Russian
-  #     link: /ru/
-  #     lang: ru
   analytics:
     provider: google
     property: !ENV GOOGLE_ANALYTICS_KEY
@@ -146,3 +131,11 @@ extra:
           note: >- 
             Thanks for your feedback! Help us improve this page by
             using our <a href="https://forms.gle/tjeWpdtSDRXyR4dG8" target="_blank" rel="noopener">feedback form</a>.
+
+nav:
+  - index.md
+  - Runtime:
+    - runtime/versions/zero.md
+    - runtime/list_of_all_bytecodes.md
+  - Guidelines:
+    - guidelines/naming-guideline.md

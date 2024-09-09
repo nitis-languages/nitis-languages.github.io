@@ -1,4 +1,10 @@
-# Beginning
+---
+hide:
+  - navigation
+  - toc
+---
+
+# Home
 
 !!! warning
 
