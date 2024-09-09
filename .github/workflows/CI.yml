@@ -28,7 +28,7 @@ jobs:
       - run: pip install mkdocs-material
       - run: |
           pip install "mkdocs-material[imaging]"
-          pip install cairosvg
+          pip install -r requirement.txt
           python3 -m pip install --upgrade pip
           python3 -m pip install --upgrade Pillow
       - run: mkdocs gh-deploy --force
