@@ -135,7 +135,11 @@ extra:
 nav:
   - index.md
   - Runtime:
-    - runtime/versions/zero.md
-    - runtime/list_of_all_bytecodes.md
+    - Bytecodes:
+      - runtime/bytecode/nope.md
+      - runtime/bytecode/break.md
+      - runtime/bytecode/push.md
+      - runtime/bytecode/store.md
   - Guidelines:
+    - guidelines/coding-style.md
     - guidelines/naming-guideline.md

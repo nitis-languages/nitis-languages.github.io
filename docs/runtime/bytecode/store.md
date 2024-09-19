@@ -1,8 +1,7 @@
 ---
-icon: material/format-font
+icon: material/cog-box
 ---
-
-# Naming guidelines
+# `store` instructions
 
 !!! warning
 

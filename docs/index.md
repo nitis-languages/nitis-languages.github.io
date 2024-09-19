@@ -4,8 +4,6 @@ hide:
   - toc
 ---
 
-# Home
-
 !!! warning
 
     Site still in developing...

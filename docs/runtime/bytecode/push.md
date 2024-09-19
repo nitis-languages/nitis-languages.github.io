@@ -1,3 +1,6 @@
+---
+icon: material/cog-box
+---
 # `push` instructions
 Push instructions are pushing values onto stack for future using
 
