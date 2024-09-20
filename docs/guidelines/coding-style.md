@@ -1,6 +1,6 @@
 ---
 icon: material/code-braces
-description: Hi
+description: Use these guidelines when developing your projects, and they will also make it easier to understand when working with external APIs.
 ---
 # Coding style
 
