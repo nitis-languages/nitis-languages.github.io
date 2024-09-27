@@ -135,6 +135,8 @@ extra:
 nav:
   - index.md
   - Runtime:
+    - runtime/access.md
+    - runtime/inheritance.md
     - Bytecodes:
       - runtime/bytecode/nope.md
       - runtime/bytecode/break.md
