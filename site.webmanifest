@@ -1,0 +1,19 @@
+{
+	"background_color": "#242048",
+	"display": "standalone",
+	"icons": [
+		{
+			"sizes": "192x192",
+			"src": "/assets/android-chrome-192x192.png",
+			"type": "image/png"
+		},
+		{
+			"sizes": "512x512",
+			"src": "/assets/android-chrome-512x512.png",
+			"type": "image/png"
+		}
+	],
+	"name": "NLR documentation",
+	"short_name": "NLR::docs",
+	"theme_color": "#242048"
+}
